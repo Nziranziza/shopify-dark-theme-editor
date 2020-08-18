@@ -1,7 +1,8 @@
 {
-    "name": "Shopify Dark Mode Code Editor",
-    "version": "1.0",
+    "name": "Shopify Code Editor Dark Mode",
+    "version": "1.1",
     "manifest_version": 2,
+    "description": "Change your shopify code editor to dark mode",
     "content_scripts": [
         {
             "matches": ["https://*.myshopify.com/admin/themes/*", "https://*.myshopify.com/admin/themes?channel=true"],
@@ -10,15 +11,15 @@
     ],
     "browser_action": { 
         "default_popup": "popup.html",
-        "default_title": "Shopify Dark Mode code editor",
-        "default_icon": "shopify-dark-mode-code-editor.png"
+        "default_title": "Shopify code editor Dark Mode",
+        "default_icon": "icon.png"
     },
     "permissions": [
         "storage"
       ],
     "icons": { 
-        "16": "shopify-dark-mode-code-editor.png",
-        "48": "shopify-dark-mode-code-editor.png",
-        "128": "shopify-dark-mode-code-editor.png" 
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png" 
     }
 }

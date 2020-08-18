@@ -2,7 +2,7 @@ const toggleTheme= function (themeColor) {
   chrome.storage.sync.set({ 'shopify-theme-color': themeColor });
 
   chrome.tabs.query({ currentWindow: true }, function(tabs) {
-    tabs.array.forEach(tab => {
+    tabs.forEach(tab => {
       chrome.tabs.sendMessage(tab.id,{ 'themeColor': themeColor });
     });
   });
